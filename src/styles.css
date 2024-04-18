@@ -1,0 +1,333 @@
+/* -- global styles -- */
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(27, 27, 27);
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* -- gameplay page styles -- */
+
+.pageWrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.titleText {
+    border-bottom: 3px dashed white;
+}
+
+.homepageButton {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.iconsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.restartButton {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#gameCanvas {
+    /* setting the width & height here gives issues */
+    /* margin: 10px; */
+    border-radius: 10px;
+}
+
+.scoreContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    height: 60px;
+    /* border: 2px solid rgb(0, 0, 0); */
+    border-radius: 10px;
+}
+
+.playerOneScore {
+    height: 30px;
+    /* border: 1px solid black; */
+    display: flex;
+}
+.playerOneScore .tag {
+    color: rgb(126, 126, 255);
+    font-size: 30px;
+    font-weight: 600;
+}
+.playerOneScore .score {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.playerTwoScore {  
+    height: 30px;
+    /* border: 1px solid black; */
+    display: flex;
+}
+.playerTwoScore .tag {
+    color: rgb(255, 81, 81);
+    font-size: 30px;
+    font-weight: 600;
+}
+.playerTwoScore .score {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.playerThreeScore {
+    height: 30px;
+    /* border: 1px solid black; */
+    display: flex;
+}.playerThreeScore .tag {
+    color: rgb(113, 209, 113);
+    font-size: 30px;
+    font-weight: 600;
+}
+.playerThreeScore .score {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.gameOverModal {
+    background-color: rgba(0, 0, 0, 0.518);
+    width: 250px;
+    height: 220px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 17.5%;;
+    left: 72%;
+    color: white;
+    display: none;
+}
+
+.winnerText{
+    font-size: 30px;
+}
+
+.modalCloseButton {
+    position: absolute;
+    font-size: 13px;
+    font-weight: 600;
+    top: 1.5%;
+    left: 94.5%;
+    color: rgb(166, 18, 18);
+}
+
+/* -- landing page styles -- */
+
+.landingPageBody {
+    background-color: rgb(27,27,27);
+    color: rgba(255, 255, 255, 0.904);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navBarContainer {
+    height: 100px;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    /* border-bottom: 1px solid rgb(217, 217, 217); */
+    position: relative;
+}
+
+.navBarTitle {
+    margin-top: 27px;
+    font-size: 35px;
+}
+.paperImage {
+    height: 35px;
+    margin-top: 30px;
+    margin-right: 12px;
+}
+
+.pencilImage {
+    height: 38px;
+    margin-top: 24px;
+    margin-left: 10px;
+}
+
+.navBarWikiImage {
+    position: absolute;
+    top: 15px;
+    left: 96%;
+    width: 43px;
+    cursor: pointer;
+}
+
+.heroSection {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.landingPageImage {
+    width: 600px;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+.rightHeroSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 450px;
+    height: 410px;
+    margin-top: 60px;
+}
+
+.rightHeroSideTitle {
+    font-size: 55px;
+}
+
+.rightHeroSideText {
+    font-size: 19px;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.playNowButton {
+    width: 220px;
+    padding: 10px 0px;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(47, 45, 173);
+    border: none;
+    border-radius: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.watchGamePlayButton {
+    width: 210px;
+    padding: 10px;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.joinRoomContainer {
+    display: flex;
+    /* justify-content: center; */
+    margin-left: 8px;
+}
+
+#roomCodeInput {
+    width: 200px;
+    height: 38px;
+    padding-left: 10px;
+    border: none;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#joinRoomButton {
+    font-size: 20px;
+    font-weight: 600;
+    width: 100px;
+    height: 38px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: 2px;
+    background-color: rgb(33, 145, 23);
+    color: white;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-size: 14px;
+}
+
+.gameCodeTitle {
+    /* display: none; */
+    font-size: 20px;
+    font-weight: 300;
+    color:rgb(255, 255, 255)
+}
+
+.gameCode {
+    color:rgb(255, 238, 0);
+    font-weight: 700;
+}
+
+#gamePage {
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.waitContainer {
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 110px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.waitTitle {
+    padding: 8px 10px 5px 10px;
+}
+
+.waitContainer hr {
+    /* width: calc(100% + 20px);
+    margin: 0 -11px; */
+    color: black;
+}
+
+.waitTextContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.049);
+}
+
+.waitImage {
+    height: 60px;
+    width:60px;
+}
